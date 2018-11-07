@@ -57,7 +57,7 @@ public class ArrayMethods {
     return ans;
   }
 
-  public static boolean isColMagic(int[][] ary) {
+  public static boolean isColumnMagic(int[][] ary) {
     boolean ans = true;
     int[] sums = allColSums(ary);
     for (int i = 0; i < sums.length - 1; i++) {

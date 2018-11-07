@@ -77,11 +77,11 @@ public class Driver {
     }
 
     try {
-      if (ArrayMethods.isColMagic(square)) {
-        System.out.println(++c + ") isColMagic should return false!");
+      if (ArrayMethods.isColumnMagic(square)) {
+        System.out.println(++c + ") isColumnMagic should return false!");
       }
     } catch (IndexOutOfBoundsException e) {
-      System.out.println(++c + ") isColMagic should not throw an exception!");
+      System.out.println(++c + ") isColumnMagic should not throw an exception!");
     }
 
     if (c > 0) {
