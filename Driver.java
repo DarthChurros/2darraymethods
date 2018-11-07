@@ -26,7 +26,7 @@ public class Driver {
     }
 
 
-    System.out.println("Initialized a 2D array, filled arrays with correct sum values\n");
+    System.out.println("\nInitialized a 2D array, filled arrays with correct sum values\n");
     System.out.println(".............................................................\n");
 
     //PART 1
@@ -42,7 +42,7 @@ public class Driver {
 
     try {
       for (int i = 0; i < 9; i++) {
-        if (ArrayMethods.rowSum(square, i) != colSums[i]) {
+        if (ArrayMethods.columnSum(square, i) != colSums[i]) {
           System.out.println(++c + ") columnSum returns " + ArrayMethods.columnSum(square, i) + " at " + i + " instead of " + colSums[i] + "!");
         }
       }
