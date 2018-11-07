@@ -39,10 +39,12 @@ public class ArrayMethods {
         x = ary[i].length;
       }
     }
-    int[] sums =  new int[ary[0].length];
+    int[] sums =  new int[x];
     for (int i = 0; i < x; i++) {
       sums[i] = columnSum(ary, i);
     }
     return sums;
   }
+
+
 }
