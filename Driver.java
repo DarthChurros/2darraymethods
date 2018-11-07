@@ -68,5 +68,26 @@ public class Driver {
     }
 
     //PART 3
+    try {
+      if (ArrayMethods.isRowMagic(square)) {
+        System.out.println(++c + ") isRowMagic should return false!");
+      }
+    } catch (IndexOutOfBoundsException e) {
+      System.out.println(++c + ") isRowMagic should not throw an exception!");
+    }
+
+    try {
+      if (ArrayMethods.isColMagic(square)) {
+        System.out.println(++c + ") isColMagic should return false!");
+      }
+    } catch (IndexOutOfBoundsException e) {
+      System.out.println(++c + ") isColMagic should not throw an exception!");
+    }
+
+    if (c > 0) {
+      System.out.println("\nYour code had " + c + " mistakes. Keep trying!\n");
+    } else {
+      System.out.println("\nYour code had no mistakes. You're good to go!\n");
+    }
   }
 }
